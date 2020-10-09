@@ -1,0 +1,53 @@
+.unique-user-view-modal {
+  width: 100%;
+  .style-card-merge-users-available {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    //  float: left;
+    margin: 0;
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 20px;
+    small {
+      font-size: 13px;
+      color: #999999;
+    }
+  }
+  .selected {
+    background-color: #1aae88;
+    .style-card-merge-users-content p {
+      color: white;
+    }
+  }
+
+  .style-card-merge-users-available::before {
+    position: absolute;
+    left: 15px;
+    top: 29px;
+    content: "";
+    width: 40px;
+    height: 30px;
+  }
+
+  .style-card-merge-users-content {
+    width: 100%;
+    float: left;
+
+    p {
+      font-size: 14px;
+      color: #333333;
+      margin: 0;
+
+      span {
+        float: right;
+        font-size: 13px;
+        color: #999999;
+      }
+    }
+  }
+
+  .ant-card.style-card-merge-users-available .ant-card-body {
+    padding: 0;
+  }
+}

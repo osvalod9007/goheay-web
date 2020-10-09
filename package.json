@@ -1,0 +1,99 @@
+{
+  "name": "goheavy-spa",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/data-set": "^0.10.2",
+    "@iconify/icons-ant-design": "^1.0.0",
+    "@iconify/react": "^1.1.0",
+    "@testing-library/react": "^8.0.7",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.10",
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "antd": "^3.25.2",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link": "^1.2.12",
+    "apollo-link-context": "^1.0.18",
+    "apollo-link-error": "^1.1.11",
+    "apollo-link-http": "^1.5.15",
+    "apollo-link-mock": "^1.0.1",
+    "apollo-link-state": "^0.4.2",
+    "apollo-upload-client": "^11.0.0",
+    "babel-plugin-import": "^1.12.0",
+    "bizcharts": "^3.5.5",
+    "customize-cra": "^0.2.14",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "graphql": "^14.4.0",
+    "graphql-tag": "^2.10.1",
+    "i18next": "^17.0.4",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "mobx": "^5.10.1",
+    "mobx-react-lite": "^1.4.1",
+    "moment-timezone": "^0.5.26",
+    "react": "^16.10.2",
+    "react-apollo": "^2.5.8",
+    "react-apollo-hooks": "^0.4.5",
+    "react-app-rewired": "^2.1.3",
+    "react-dom": "^16.10.2",
+    "react-i18next": "^10.11.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-scripts": "3.0.1",
+    "react-stripe-elements": "^4.0.0",
+    "react-test-renderer": "^16.8.6",
+    "rift-router": "1.3.0",
+    "socket.io-client": "^2.3.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "3.5.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --coverage -u",
+    "lint": "tslint './src/**/*.{ts,tsx}' --project tsconfig.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^4.3.4",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "tslint": "^5.18.0",
+    "tslint-react": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write --print-width 120 --single-quote --tab-width 2 --trailing-comma all --no-bracket-spacing",
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+@import '~antd/dist/antd.less';
+
+.sidebar {
+  display: none;
+  max-width: 250px;
+  flex: 0 0 250px;
+  height: 100vh;
+  box-shadow: 0 0 10px 1px #ddd;
+  z-index: 2;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  position: relative;
+
+  .ant-menu {
+    border-right: none;
+
+    .ant-menu-item {
+      margin: 0;
+    }
+  }
+
+
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  &__avatar-text {
+    margin-left: 8px;
+
+    div {
+      margin-top: -8px;
+    }
+  }
+
+  // &::after {
+  //   content: '';
+  //   background: url(./sidebar-bg.svg);
+  //   background-size: cover;
+  //   background-origin: border-box;
+  //   width: 320px;
+  //   position: absolute;
+  //   min-height: 235px;
+  //   bottom: 5px;
+  // }
+  &::after {
+    content: '';
+    background: url(./sidebar-bg.svg) no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    width: 250px;
+    position: absolute;
+    min-height: 185px;
+    bottom: 5px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &--hide-img {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  @media all and (min-width: @screen-xl) {
+    display: block;
+
+    & > div {
+      position: absolute;
+      width: 100%;
+      z-index: 5;
+    }
+  }
+}

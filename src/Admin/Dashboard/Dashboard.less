@@ -1,0 +1,180 @@
+@import '~antd/dist/antd.less';
+
+.content {
+  flex: 1 1 0;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 5px;
+  overflow: auto;
+
+  @media all and (min-width: @screen-lg) {
+    padding: 15px;
+  }
+
+  .ant-breadcrumb {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-card-bordered {
+    box-shadow: 0 0 10px 0 #ddd;
+  }
+
+  .stats-pie {
+    .ant-card-body {
+      padding: 12px;
+    }
+  }
+
+  .stats {
+    .ant-card-body {
+      // padding: 12px;
+      padding: 20px 8px 8px;
+    }
+    &--margin-bottom {
+      margin-bottom: 15px;
+
+      @media all and (min-width: @screen-md) {
+        margin-bottom: 0;
+      }
+    }
+
+
+    .ant-row-flex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      @media all and (min-width: @screen-xxl) {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+      }
+    }
+
+    &__icon {
+      padding: 14px;
+      border-radius: 50%;
+      font-size: 25px;
+      color: @alert-info-icon-color;
+      background: @alert-info-bg-color;
+      border: 1px solid @alert-info-border-color;
+
+      &--success {
+        color: @alert-success-icon-color;
+        background: @alert-success-bg-color;
+        border: 1px solid @alert-success-border-color;
+      }
+
+      &--warning {
+        color: @alert-warning-icon-color;
+        background: @alert-warning-bg-color;
+        border: 1px solid @alert-warning-border-color;
+      }
+
+      &--danger {
+        color: @alert-error-icon-color;
+        background: @alert-error-bg-color;
+        border: 1px solid @alert-error-border-color;
+      }
+    }
+
+    &__value {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    &__label {
+      margin-top: -5px;
+    }
+
+    &__align-left {
+      text-align: left;
+    }
+
+    &__today-orders {
+      font-weight: bold;
+
+      &--booked {
+        color: #0275d8;
+      }
+
+      &--unpaid {
+        color: #e33244;
+      }
+
+      &--paid {
+        color: #1aae88;
+      }
+    }
+
+    &__main-statistics {
+      position: relative;
+    }
+
+    &__main-statistics-title {
+      height: 22px;
+      color: rgba(0,0,0,.45);
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__main-statistics-total {
+      height: 38px;
+      margin-top: 4px;
+      margin-bottom: 0;
+      overflow: hidden;
+      color: rgba(0,0,0,.85);
+      font-size: 26px;
+      line-height: 38px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: break-all;
+
+      @media all and (min-width: @screen-md) {
+        font-size: 14px;
+      }
+
+      &--left {
+        float: left;
+      }
+
+      &--right {
+        float: right;
+      }
+    }
+
+    &__main-statistics-content {
+      position: relative;
+      width: 100%;
+      margin-bottom: 12px;
+
+      &--margin-top {
+        margin-top: 19px;
+      }
+    }
+
+    &__main-statistics-main-percent {
+      height: 38px;
+      margin-top: 4px;
+      margin-bottom: 0;
+      overflow: hidden;
+      color: rgba(0,0,0,.85);
+      font-size: 30px;
+      line-height: 38px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      word-break: break-all;
+      margin-top: 27px;
+    }
+
+    .ant-statistic-content-value-int {
+      font-size: 18px;
+    }
+  }
+}
+
+.mb-15 {
+  margin-bottom: 7px !important;
+}

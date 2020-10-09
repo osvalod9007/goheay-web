@@ -1,0 +1,127 @@
+import {Order} from './order.cs';
+import {ImageFile} from './imageFile.cs';
+
+describe('Test Order class', () => {
+  const imageLogoDef = new ImageFile();
+  const imageLogo = new ImageFile({
+    id: undefined,
+    name: '',
+    pathUrl: '',
+    mimeType: '',
+    size: '',
+  });
+
+  const initValues = {
+    id: undefined,
+    name: '',
+    receiptNo: '',
+    totalPieces: 0,
+    totalSmallSize: 0,
+    totalMediumSize: 0,
+    totalLargeSize: 0,
+    totalHugeSize: 0,
+    totalWeight: 0,
+    totalCubicDimension: 0,
+    note: '',
+    pickUpContactName: '',
+    pickUpContactMobileNumberCode: '',
+    pickUpContactMobileNumber: '',
+    dropOffContactName: '',
+    dropOffContactMobileNumberCode: '',
+    dropOffContactMobileNumber: '',
+    products: [],
+    customerId: '',
+    customerFullName: '',
+    customerEmail: '',
+    customerMobilePhoneNumberCode: '',
+    customerMobilePhoneNumber: '',
+    customerImage: imageLogoDef,
+    pickUpLocationAddress: '',
+    pickUpGooglePlaceId: '',
+    pickUpLocationPoint: '',
+    pickUpTimeZone: '',
+    dropOffLocationAddress: '',
+    dropOffGooglePlaceId: '',
+    dropOffLocationPoint: '',
+    dropOffTimeZone: '',
+    deliveryStartAt: '',
+    deliveryEndAt: '',
+    createdAt: '',
+    status: '',
+    vehicleType: '',
+    driverFullName: '',
+    driverEmail: '',
+    driver: '',
+    route: '',
+    measureBaseFarePrice: '-',
+    measureDistanceChargePrice: '-',
+    measureLaborChargePrice: '-',
+    measureServiceFeePrice: '-',
+    measureEveningDeliveryPrice: '-',
+    measureTaxPrice: '-',
+    measureHandlingSurchargesTotalPiecesPrice: '-',
+    measureTotalPrice: '-',
+  };
+  const initTwoValues = {
+    id: undefined,
+    name: '',
+    receiptNo: '',
+    totalPieces: 0,
+    totalSmallSize: 0,
+    totalMediumSize: 0,
+    totalLargeSize: 0,
+    totalHugeSize: 0,
+    totalWeight: 0,
+    totalCubicDimension: 0,
+    note: '',
+    pickUpContactName: '',
+    pickUpContactMobileNumberCode: '',
+    pickUpContactMobileNumber: '',
+    dropOffContactName: '',
+    dropOffContactMobileNumberCode: '',
+    dropOffContactMobileNumber: '',
+    products: [],
+    customerId: '',
+    customerFullName: '',
+    customerEmail: '',
+    customerMobilePhoneNumberCode: '',
+    customerMobilePhoneNumber: '',
+    customerImage: new ImageFile(),
+    pickUpLocationAddress: '',
+    pickUpGooglePlaceId: '',
+    pickUpLocationPoint: '',
+    pickUpTimeZone: '',
+    dropOffLocationAddress: '',
+    dropOffGooglePlaceId: '',
+    dropOffLocationPoint: '',
+    dropOffTimeZone: '',
+    deliveryStartAt: '',
+    deliveryEndAt: '',
+    createdAt: '',
+    status: '',
+    vehicleType: '',
+    driverFullName: '',
+    driverEmail: '',
+    driver: '',
+    route: '',
+    measureBaseFarePrice: '-',
+    measureDistanceChargePrice: '-',
+    measureLaborChargePrice: '-',
+    measureServiceFeePrice: '-',
+    measureEveningDeliveryPrice: '-',
+    measureTaxPrice: '-',
+    measureHandlingSurchargesTotalPiecesPrice: '-',
+    measureTotalPrice: '-',
+  };
+  const objOne = new Order();
+  const objTwo = new Order(initTwoValues);
+  // const loginAsAdmin = jest.fn().mockImplementation(store.loginAsAdmin);
+
+  it('obj without init values', () => {
+    expect(objOne).toEqual(initValues);
+  });
+
+  it('obj with init values', () => {
+    expect(objTwo).toEqual(initTwoValues);
+  });
+});

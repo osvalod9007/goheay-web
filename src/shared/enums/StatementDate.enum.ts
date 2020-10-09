@@ -1,0 +1,6 @@
+export enum StatementDateEnum {
+  TYPE_OVERALL = 'TYPE_OVERALL',
+  TYPE_DAILY = 'TYPE_DAILY',
+  TYPE_MONTHLY = 'TYPE_MONTHLY',
+  TYPE_YEARLY = 'TYPE_YEARLY',
+}

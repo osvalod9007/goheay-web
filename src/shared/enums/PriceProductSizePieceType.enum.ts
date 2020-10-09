@@ -1,0 +1,4 @@
+export enum PriceProductSizePieceTypeEnum {
+  PIECE_TYPE_SIMPLE = 'PIECE_TYPE_SIMPLE',
+  PIECE_TYPE_MULTIPLE = 'PIECE_TYPE_MULTIPLE',
+}

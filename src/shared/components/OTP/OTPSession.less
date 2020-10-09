@@ -1,0 +1,23 @@
+.otp {
+  &__inputs {
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+    .ant-input-number {
+      margin-right: 15px;
+      text-align: center;
+      font-size: 15px;
+      &:last-child {
+        margin-right: 0px;
+        input {
+          height: 28px;
+        }
+      }
+      .ant-input-number-handler-wrap {
+        display: none;
+      }
+    }
+  }
+}

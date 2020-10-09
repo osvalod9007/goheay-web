@@ -1,0 +1,52 @@
+@import '~antd/dist/antd.less';
+
+.goh-footer-container {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  @media all and (min-width: @screen-xl) {
+    display: block;
+  }
+}
+
+.goh-footer {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  height: 38px;
+
+  &__text {
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    font-weight: 700;
+    color: #ffffff78;
+  }
+
+  &::before {
+    content: '';
+    background: #005CA8;
+    height: 84px;
+    transform: skewY(-3deg);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -77px;
+  }
+
+  &::after {
+    content: '';
+    background: white;
+    height: 92px;
+    transform: skewY(3deg);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -72px;
+    box-shadow: 0 0 5px 1px #ddd;
+  }
+}

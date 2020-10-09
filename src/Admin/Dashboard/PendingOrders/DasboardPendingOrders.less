@@ -1,0 +1,48 @@
+.dashboard-pending-orders {
+  .ant-card-body {
+    padding: 20px 0 0;
+  }
+
+  &__title {
+    padding: 0 8px 8px;
+    font-weight: bold;
+    color: #000000d9;
+  }
+
+  &__row {
+    position: relative;
+    width: 100%;
+
+    .ant-col {
+      align-self: center;
+    }
+
+    &--info {
+      margin-top: -5px;
+    }
+  }
+  
+  &__pointer {
+    cursor: pointer;
+  }
+
+  &__infinite-container {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    overflow: auto;
+    padding: 8px;
+    min-height: 86px;
+    max-height: 546px;
+  }
+
+  &__loading-container {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__info {
+    width: 75%;
+  }
+}

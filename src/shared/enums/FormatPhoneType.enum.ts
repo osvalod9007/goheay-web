@@ -1,0 +1,7 @@
+export enum FormatPhoneTypeEnum {
+  LOCAL = 'LOCAL',
+  NATIONAL = 'NATIONAL',
+  INTERNATIONAL = 'INTERNATIONAL',
+  DIALECT_US = 'DIALECT_US',
+  RFC = 'RFC',
+}

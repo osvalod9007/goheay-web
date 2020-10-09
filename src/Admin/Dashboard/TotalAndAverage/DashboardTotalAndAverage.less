@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.less';
+.dashboard-total-and-average {
+  .ant-card-body {
+    padding: 20px 12px;
+  }
+  &--margin-bottom {
+    margin-bottom: 15px;
+
+    @media all and (min-width: @screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__main-statistics {
+    position: relative;
+  }
+  
+  &__main-statistics-title {
+    height: 22px;
+    // color: rgba(0,0,0,.45);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #000000d9;
+  }
+}

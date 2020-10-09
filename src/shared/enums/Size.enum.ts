@@ -1,0 +1,6 @@
+export enum SizeEnum {
+  TYPE_SMALL = 'TYPE_SMALL',
+  TYPE_MEDIUM = 'TYPE_MEDIUM',
+  TYPE_LARGE = 'TYPE_LARGE',
+  TYPE_HUGE = 'TYPE_HUGE',
+}
